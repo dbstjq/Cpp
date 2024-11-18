@@ -111,3 +111,12 @@ void Rect::draw() {
 void Line::draw() {
 	cout << "Line" << endl;
 }
+
+GraphicEditor::~GraphicEditor() {
+	Shape* p = pStart;
+	while (p != NULL) {
+		Shape* next = p->getNext();
+		delete p;
+		p = next;
+	}
+}
