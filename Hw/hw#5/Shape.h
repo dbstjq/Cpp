@@ -37,10 +37,9 @@ class GraphicEditor {
     int count;
 public:
     GraphicEditor();
+    ~GraphicEditor();
     void Make(int num);
     void Delete(int num);
     void call();
 };
-
-
 #endif
